@@ -6,14 +6,23 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
+const path = require('path');
+
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
 }));
 
-// app.get("/api", (req, res) => {
-//   res.json({ message: "Hello from server!" });
-// });
+app.use(express.static('public'));
+
+// app.use('/static', express.static(path.join(__dirname, 'public')));
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/index.html'), err => {
+    if (err) {
+      res.status(500).send(err)
+    }
+  });
+});
 
 const movieSearch = (req, res) => {
   let { searchName } = req.body;
@@ -27,7 +36,6 @@ const movieSearch = (req, res) => {
     .then(response => response.json())
     .then(response => {
       let data = response;
-      // console.log(response.Search);
       res.json(data);
     })
     .catch(err => {
@@ -49,7 +57,6 @@ const movieInfo = (req, res) => {
     .then(response => response.json())
     .then(response => {
       let data = response;
-      console.log(response);
       res.json(data);
     })
     .catch(err => {
