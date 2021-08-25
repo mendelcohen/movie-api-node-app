@@ -2,5 +2,5 @@
 
 ## screenshots
 
-![Landing Page](Sceenshots/LandingPage.png)
-![Search and first rate](Sceenshots/MovieSearch1.png)
+![Landing Page](Screenshots/LandingPage.png)
+![Search and first rate](Screenshots/MovieSearch1.png)
