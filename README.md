@@ -1,6 +1,6 @@
 # movie-api-node-app
 
-Logon to the site [here](movie-api-search-to-rate.herokuapp.com).
+Logon to the site [here](https://movie-api-search-to-rate.herokuapp.com).
 
 ## Setup and run on your device
 
