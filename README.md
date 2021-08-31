@@ -14,7 +14,11 @@ Visit the site [here](https://movie-api-search-to-rate.herokuapp.com).
 
 ### Screenshots
 
-![Landing Page](Screenshots/LandingPage.png)
-![Search by movie name and be first to rate](Screenshots/SearchMovieName1.png)
-![Click on movie dropdown arrow to see movie data and to rate](Screenshots/MovieDropdown.png)
-![Ratings Chart Format](Screenshots/RatingsChartFormat.png)
+**Landing Page**
+![Image](Screenshots/LandingPage.png)
+**Search by movie name and be the first to rate**
+![Image](Screenshots/SearchMovieName1.png)
+**Click on a movie dropdown arrow to see movie data and to rate**
+![Image](Screenshots/MovieDropdown.png)
+**Ratings Chart Format**
+![Image](Screenshots/RatingsChartFormat.png)
